@@ -1,1 +1,90 @@
-# Numerical-Methods-for-Finance
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "ea979661-980c-4700-8af3-6762eb6e7912",
+   "metadata": {},
+   "source": [
+    "# Numerical Methods for Finance\n",
+    "\n",
+    "This repository presents a curated collection of numerical techniques widely used in quantitative finance, implemented and visualized in Python.  \n",
+    "Each notebook demonstrates a core mathematical method applied to derivative pricing, stochastic simulation, or partial differential equation (PDE) modeling, emphasizing accuracy, stability, and computational efficiency. The objective is to bridge theoretical finance with practical implementation to model price dynamics and evaluate complex instruments.\n",
+    "\n",
+    "---\n",
+    "\n",
+    "## Overview\n",
+    "\n",
+    "This collection showcases the **key numerical engines** underlying modern quantitative finance:\n",
+    "\n",
+    "| # | Notebook Title | Focus | Key Concepts |\n",
+    "|---|----------------|-------|---------------|\n",
+    "| **1** | *Heat Equation Simulation with Explicit Euler & Monte Carlo* | PDE foundations | Heat equation, finite difference schemes, explicit Euler discretization |\n",
+    "| **2** | *Tamed Euler Method for SDEs* | Stochastic processes | Euler–Maruyama, SDE stability, taming technique for drift control |\n",
+    "| **3** | *European Call Option Pricing: Binomial vs. Black-Scholes* | Discrete-to-continuous valuation | Risk-neutral valuation, convergence of binomial tree to Black–Scholes model |\n",
+    "| **4** | *American Put Binomial Tree Pricing and Early Exercise* | Optimal exercise features | Backward induction, early exercise boundary, tree convergence behavior |\n",
+    "| **5** | *Crank–Nicolson PDE Method for Barrier Options* | PDE methods for exotics | Crank–Nicolson discretization, boundary conditions for barrier options |\n",
+    "| **6** | *Up-and-Out Barrier Call Option Pricing* | Monte Carlo simulation | Path-dependent payoffs, barrier breach logic, pricing convergence |\n",
+    "| **7** | *Monte Carlo Pricing for Lookback Options* | Exotic path-dependent options | Continuous monitoring, payoff path dependency, simulation-based pricing |\n",
+    "| **8** | *Variance Reduction via Antithetic Variates* | Advanced variance reduction | Antithetic sampling, variance minimization, estimator convergence |\n",
+    "| **9** | *Variance Reduction via Control Variates* | Advanced variance reduction | Covariance adjustment, correlation exploitation, bias correction |\n",
+    "\n",
+    "---\n",
+    "\n",
+    "## Technical Highlights\n",
+    "\n",
+    "Each notebook is written for **clarity, reproducibility, and quantitative rigor**, combining theoretical context with clean implementation.\n",
+    "\n",
+    "**Key methods demonstrated:**\n",
+    "- **Binomial & Trinomial Trees:** Discrete lattice construction for European and American-style options; convergence analysis toward Black–Scholes prices.\n",
+    "- **Finite Difference Schemes:** Explicit Euler and Crank–Nicolson PDE solvers for diffusion-type option pricing equations.\n",
+    "- **Monte Carlo Simulation:** Randomized path generation, payoff averaging, and bias control for complex derivatives.\n",
+    "- **Variance Reduction:** Antithetic and control variates to improve estimator efficiency and reduce sampling noise.\n",
+    "- **Stochastic Differential Equations (SDEs):** Implementation of the *Tamed Euler scheme* to maintain numerical stability when simulating non-linear drifts.\n",
+    "- **Path-Dependent Payoffs:** Techniques for barrier and lookback options where payoff depends on the path history of the underlying.\n",
+    "\n",
+    "---\n",
+    "\n",
+    "## Practical Applications\n",
+    "\n",
+    "These numerical methods are foundational in:\n",
+    "\n",
+    "- **Derivative Pricing:** Computing fair values for vanilla and exotic contracts under various stochastic models.  \n",
+    "- **Risk Management:** Simulating portfolio exposures under diffusive dynamics.  \n",
+    "- **Quant Research & Strategy Development:** Understanding stochastic behavior of assets and developing pricing intuition.  \n",
+    "- **Model Validation:** Testing the numerical accuracy and convergence of pricing algorithms used in production trading systems.\n",
+    "\n",
+    "---\n",
+    "\n",
+    "## Technical Environment\n",
+    "\n",
+    "All notebooks are written in **Python 3** and require the following packages:\n",
+    "\n",
+    "```bash\n",
+    "numpy\n",
+    "scipy\n",
+    "matplotlib\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
